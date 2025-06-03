@@ -1,55 +1,706 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas - Practica</title>
+    <link rel="stylesheet" href="_css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Tablas - Práctica</title>
+
 </head>
 <body>
     <main>
-        <h1>Practica Tablas</h1>
-        <table>
-            <caption>
-                TABLA #1 - BASICA
-            </caption>
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Edad</th>
-                    <th>Parentesco</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Paola</td>
-                    <td>39</td>
-                    <td>Madre</td>
-                </tr>
-                <tr>
-                    <td>Fredy</td>
-                    <td>46</td>
-                    <td>Padre</td>
-                </tr>
-                <tr>
-                    <td>Julian</td>
-                    <td>16</td>
-                    <td>Hermano</td>                   
-                </tr>
-                <tr>
-                    <td>Santiago</td>
-                    <td>14</td>
-                    <td>Primo</td>
-                </tr>
-            </tbody>
-        </table><h5>En esta tabla utilizamos la estructura base para la creacion de una tabla con etiquetas como: <br>
-        table: etiqueta que define tabla<br>
-        caption: etiqueta que asigna nombre o descripcion a la tabla, #se recomienda usarla como primer hijo de table<br>
-        thead: etiqueta que indica que es el encabezado de la tabla<br>
-        tr: etiqueta que crea las columnas de la tabla<br>
-        th: etiqueta que crea celdas de encabezado<br>
-        tbody: etiqueta que define el cuerpo de la tabla<br>
-        td: etiqueta que cres celdas par datos simples</h5>
-    </main>
-</body>
-</html>
+        <h1>Práctica de Tablas HTML</h1>
+        
+        <section class="section-separator">
+            <table class="tabla1">
+                <caption>TABLA #1 - BÁSICA</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Parentesco</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paola</td>
+                        <td>39</td>
+                        <td>Madre</td>
+                    </tr>
+                    <tr>
+                        <td>Fredy</td>
+                        <td>46</td>
+                        <td>Padre</td>
+                    </tr>
+                    <tr>
+                        <td>Julian</td>
+                        <td>16</td>
+                        <td>Hermano</td>
+                    </tr>
+                    <tr>
+                        <td>Santiago</td>
+                        <td>14</td>
+                        <td>Primo</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p>En esta tabla utilizamos la estructura base para la creación de una tabla con etiquetas como:</p>
+            <ul>
+                <li><b>table:</b> etiqueta que define la tabla.</li>
+                <li><b>caption:</b> etiqueta que asigna nombre o descripción a la tabla. Se recomienda usarla como primer hijo de table.</li>
+                <li><b>thead:</b> etiqueta que indica que es el encabezado de la tabla.</li>
+                <li><b>tr:</b> etiqueta que crea las filas de la tabla.</li>
+                <li><b>th:</b> etiqueta que crea celdas de encabezado.</li>
+                <li><b>tbody:</b> etiqueta que define el cuerpo de la tabla.</li>
+                <li><b>td:</b> etiqueta que crea celdas para datos simples.</li>
+            </ul>
+        </section>
+
+        <section class="section-separator">
+            <table class="tabla2">
+                <caption>TABLA #2 - TFOOT</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Parentesco</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paola</td>
+                        <td>39</td>
+                        <td>Madre</td>
+                    </tr>
+                    <tr>
+                        <td>Fredy</td>
+                        <td>46</td>
+                        <td>Padre</td>
+                    </tr>
+                    <tr>
+                        <td>Julian</td>
+                        <td>16</td>
+                        <td>Hermano</td>
+                    </tr>
+                    <tr>
+                        <td>Santiago</td>
+                        <td>14</td>
+                        <td>Primo</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total de familiares: 4</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <p>En esta tabla utilizamos la etiqueta <code>tfoot</code> que tiene la función de indicar que es el pie de la tabla, normalmente se utiliza para mostrar un resumen de los datos de la tabla. También le añadimos bordes básicos para mejorar la visualización.</p>
+        </section>
+
+        <section class="section-separator">
+            <table class="tabla3">
+                <caption>TABLA #3 - COLLAPSE</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Parentesco</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paola</td>
+                        <td>39</td>
+                        <td>Madre</td>
+                    </tr>
+                    <tr>
+                        <td>Fredy</td>
+                        <td>46</td>
+                        <td>Padre</td>
+                    </tr>
+                    <tr>
+                        <td>Julian</td>
+                        <td>16</td>
+                        <td>Hermano</td>
+                    </tr>
+                    <tr>
+                        <td>Santiago</td>
+                        <td>14</td>
+                        <td>Primo</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total de familiares: 4</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <p>En esta tabla utilizamos la propiedad CSS <code>border-collapse: collapse;</code> con el fin de unificar las dos líneas que genera el borde predeterminado de la tabla, y así poder tener una tabla más limpia y atractiva.</p>
+        </section>
+
+        <section class="section-separator">
+            <table class="table4">
+                <caption>TABLA #4 - PADDING</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Parentesco</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paola</td>
+                        <td>39</td>
+                        <td>Madre</td>
+                    </tr>
+                    <tr>
+                        <td>Fredy</td>
+                        <td>46</td>
+                        <td>Padre</td>
+                    </tr>
+                    <tr>
+                        <td>Julian</td>
+                        <td>16</td>
+                        <td>Hermano</td>
+                    </tr>
+                    <tr>
+                        <td>Santiago</td>
+                        <td>14</td>
+                        <td>Primo</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total de familiares: 4</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <p>En esta tabla utilizamos la propiedad CSS <code>padding</code> con el fin de agregar un espacio entre el borde de la tabla y el contenido de la tabla. El padding funciona de la siguiente manera:</p>
+            <ul>
+                <li><code>padding: 20px;</code> agrega espacio de 20px por igual en los cuatro lados (arriba, derecha, abajo, izquierda).</li>
+                <li><code>padding: 20px 25px;</code> el primer valor (20px) aplica al <strong>top</strong> y <strong>bottom</strong> (arriba y abajo), y el segundo valor (25px) aplica a <strong>left</strong> y <strong>right</strong> (izquierda y derecha).</li>
+                <li><code>padding-left:</code> se puede usar para aplicar espaciado solo al lado izquierdo; también existen <code>padding-right</code>, <code>padding-top</code>, y <code>padding-bottom</code> para los otros lados.</li>
+            </ul>
+        </section>
+
+        <section class="section-separator">
+            <table class="table5">
+                <caption>TABLA #5 - COLOR DE BORDE</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Parentesco</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paola</td>
+                        <td>39</td>
+                        <td>Madre</td>
+                    </tr>
+                    <tr>
+                        <td>Fredy</td>
+                        <td>46</td>
+                        <td>Padre</td>
+                    </tr>
+                    <tr>
+                        <td>Julian</td>
+                        <td>16</td>
+                        <td>Hermano</td>
+                    </tr>
+                    <tr>
+                        <td>Santiago</td>
+                        <td>14</td>
+                        <td>Primo</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total de familiares: 4</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <p>En esta tabla solamente añadimos los bordes, el collapse, y le colocamos un color "tomato", el cual es un color rojo-anaranjado.</p>
+        </section>
+
+        <section class="section-separator">
+            <table class="table6">
+                <caption>TABLA #6 - COLOR DE ENCABEZADO</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Parentesco</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paola</td>
+                        <td>39</td>
+                        <td>Madre</td>
+                    </tr>
+                    <tr>
+                        <td>Fredy</td>
+                        <td>46</td>
+                        <td>Padre</td>
+                    </tr>
+                    <tr>
+                        <td>Julian</td>
+                        <td>16</td>
+                        <td>Hermano</td>
+                    </tr>
+                    <tr>
+                        <td>Santiago</td>
+                        <td>14</td>
+                        <td>Primo</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total de familiares: 4</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <p>En esta tabla, además de los bordes y el collapse, le colocamos un color de fondo al encabezado de la tabla (thead) y texto blanco para mejor contraste.</p>
+        </section>
+
+        <section class="section-separator">
+            <table class="table7">
+                <caption>TABLA #7 - TEXT-ALIGN</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Parentesco</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paola</td>
+                        <td>39</td>
+                        <td>Madre</td>
+                    </tr>
+                    <tr>
+                        <td>Fredy</td>
+                        <td>46</td>
+                        <td>Padre</td>
+                    </tr>
+                    <tr>
+                        <td>Julian</td>
+                        <td>16</td>
+                        <td>Hermano</td>
+                    </tr>
+                    <tr>
+                        <td>Santiago</td>
+                        <td>14</td>
+                        <td>Primo</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total de familiares: 4</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <p>En esta tabla usamos la propiedad CSS <code>text-align: center;</code> para alinear el texto al centro. Se puede de igual manera alinear el texto a la derecha (<code>right</code>), a la izquierda (<code>left</code>), o justificado (<code>justify</code>).</p>
+        </section>
+
+        <section class="section-separator">
+            <table class="table8">
+                <caption>TABLA #8 - FILAS ALTERNAS</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Parentesco</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paola</td>
+                        <td>39</td>
+                        <td>Madre</td>
+                    </tr>
+                    <tr>
+                        <td>Fredy</td>
+                        <td>46</td>
+                        <td>Padre</td>
+                    </tr>
+                    <tr>
+                        <td>Julian</td>
+                        <td>16</td>
+                        <td>Hermano</td>
+                    </tr>
+                    <tr>
+                        <td>Santiago</td>
+                        <td>14</td>
+                        <td>Primo</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total de familiares: 4</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <p>En esta tabla usamos la propiedad CSS <code>tbody tr:nth-child(odd)</code>, que le da un estilo alternado de color. <code>odd</code> se aplica en filas impares y <code>even</code> se aplica en filas pares.</p>
+        </section>
+
+        <section class="section-separator">
+            <table class="table9">
+                <caption>TABLA #9 - HOVER</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Parentesco</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paola</td>
+                        <td>39</td>
+                        <td>Madre</td>
+                    </tr>
+                    <tr>
+                        <td>Fredy</td>
+                        <td>46</td>
+                        <td>Padre</td>
+                    </tr>
+                    <tr>
+                        <td>Julian</td>
+                        <td>16</td>
+                        <td>Hermano</td>
+                    </tr>
+                    <tr>
+                        <td>Santiago</td>
+                        <td>14</td>
+                        <td>Primo</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total de familiares: 4</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <p>En esta tabla usamos la propiedad CSS <code>:hover</code>, que le da un estilo cuando el mouse está sobre la fila. También agregamos una transición suave con <code>transition</code>.</p>
+        </section>
+
+        <section class="section-separator">
+            <table class="tabla3">
+                <caption>TABLA #10 - SCOPE</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Parentesco</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Paola</th>
+                        <td>39</td>
+                        <td>Madre</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Fredy</th>
+                        <td>46</td>
+                        <td>Padre</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Julian</th>
+                        <td>16</td>
+                        <td>Hermano</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Santiago</th>
+                        <td>14</td>
+                        <td>Primo</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total de familiares: 4</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <p>En esta tabla usamos la propiedad <code>th scope="row"</code> para que el nombre de cada persona actúe como encabezado de su fila, mejorando la accesibilidad y lectura de los datos.</p>
+        </section>
+
+        <section class="section-separator">
+            <table class="tabla3">
+                <caption>TABLA #11 - COLSPAN</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Producto</th>
+                        <th colspan="2">Precio</th>
+                    </tr>
+                    <tr>
+                        <th>Libra</th>
+                        <th>Kilo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Manzanas</th>
+                        <td>$1.200</td>
+                        <td>$2.400</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Peras</th>
+                        <td>$800</td>
+                        <td>$1.600</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Plátanos</th>
+                        <td>$1.500</td>
+                        <td>$3.000</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p>En esta tabla el encabezado "Precio" usa <code>colspan="2"</code> para cubrir las columnas "Libra" y "Kilo". Esto permite agrupar visualmente categorías relacionadas bajo un mismo título, mejorando la organización y legibilidad de los datos en tablas complejas.</p>
+        </section>
+
+        <section class="section-separator">
+            <table class="tabla3">
+                <caption>TABLA #12 - ROWSPAN</caption>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Hora</th>
+                        <th>Asignatura</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="2" scope="rowgroup">Martes</th>
+                        <td>9:00 - 12:00</td>
+                        <td>Investigación</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 - 18:00</td>
+                        <td>Scrum</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3" scope="rowgroup">Miércoles</th>
+                        <td>6:00 - 9:00</td>
+                        <td>Derechos</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 - 12:00</td>
+                        <td>Hábitos</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 - 18:00</td>
+                        <td>Base de Datos</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p>En esta tabla se utiliza el atributo <code>rowspan</code> para que una celda abarque varias filas. Por ejemplo, los días "Martes" y "Miércoles" usan rowspan para indicar que sus respectivas celdas cubren dos o más filas de horario. Esto permite evitar la repetición del mismo valor en filas consecutivas, haciendo la tabla más clara y ordenada visualmente.</p>
+        </section>
+
+        <section class="section-separator">
+            <table class="tabla3">
+                <caption>TABLA #13 - ID Y HEADERS</caption>
+                <thead>
+                    <tr>
+                        <th id="producto">Producto</th>
+                        <th id="precio">Precio</th>
+                        <th id="stock">Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td headers="producto">Manzana</td>
+                        <td headers="precio">$1.000</td>
+                        <td headers="stock">50</td>
+                    </tr>
+                    <tr>
+                        <td headers="producto">Banana</td>
+                        <td headers="precio">$1.800</td>
+                        <td headers="stock">100</td>
+                    </tr>
+                    <tr>
+                        <td headers="producto">Pera</td>
+                        <td headers="precio">$1.200</td>
+                        <td headers="stock">75</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><strong>Total de productos:</strong></td>
+                        <td>3</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <p>En esta tabla se usan los atributos <code>id</code> en las celdas de encabezado (th) y <code>headers</code> en las celdas de datos (td). Esto establece una relación explícita entre los encabezados y los datos correspondientes, lo cual es especialmente útil para tecnologías asistidas como lectores de pantalla. Por ejemplo, la celda que contiene "$1.000" está relacionada con el encabezado "Precio" gracias a <code>headers="precio"</code>.</p>
+        </section>
+
+        <section class="section-separator">
+            <div class="responsive-container">
+                <table class="tabla3">
+                    <caption>TABLA #14 - TABLA RESPONSIVA</caption>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
+                            <th>Categoría</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Manzana</td>
+                            <td>Fruta roja, dulce y crujiente</td>
+                            <td>$1.200</td>
+                            <td>50</td>
+                            <td>Frutas</td>
+                        </tr>
+                        <tr>
+                            <td>Banano</td>
+                            <td>Fruta amarilla, rica en potasio</td>
+                            <td>$600</td>
+                            <td>100</td>
+                            <td>Frutas</td>
+                        </tr>
+                        <tr>
+                            <td>Pan Integral</td>
+                            <td>Pan saludable de granos enteros</td>
+                            <td>$500</td>
+                            <td>30</td>
+                            <td>Panadería</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <p>Esta tabla está envuelta en un contenedor con <code>overflow-x: auto;</code>, lo cual permite que se desplace horizontalmente en pantallas pequeñas. Esto mejora la experiencia en dispositivos móviles al evitar que el contenido se desborde fuera del área visible.</p>
+        </section>
+
+        <section class="section-separator">
+            <table style="border-collapse: collapse; text-align: center; margin-bottom: 20px; width: 100%;">
+                <caption>TABLA #15 - ESTILOS DE BORDES</caption>
+                <thead>
+                    <tr>
+                        <th style="border: 2px dotted red; padding: 10px;">Producto</th>
+                        <th style="border: 2px dashed green; padding: 10px;">Precio</th>
+                        <th style="border: 2px double blue; padding: 10px;">Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 2px dotted red;">Manzana</td>
+                        <td style="border: 2px dashed green;">$1.000</td>
+                        <td style="border: 2px double blue;">50</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 2px dotted red;">Banana</td>
+                        <td style="border: 2px dashed green;">$800</td>
+                        <td style="border: 2px double blue;">100</td>
+                    </tr>
+                </tbody>
+                </table>
+
+                <p>
+                En esta tabla se experimentó con distintos tipos de borde utilizando el atributo border-style, incluyendo dotted, dashed y double, junto con diferentes colores. Esto permite explorar cómo varía la apariencia de las celdas.Finalmente, se aplicó el estilo solid para lograr un diseño limpio y uniforme.
+                </p>
+            </section>
+
+            <section class="section-separator">
+                <table class="tabla3" >
+                    <caption>TABLA #16 - ICONOGRAFIA DE CELDAS</caption>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Tendencia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Manzana</td>
+                            <td>$1.000</td>
+                            <td><i class="fas fa-arrow-up" style="color: green;" title="Tendencia ascendente"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Banana</td>
+                            <td>$800</td>
+                            <td><i class="fas fa-arrow-down" style="color: red;" title="Tendencia descendente"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Pera</td>
+                            <td>$1.200</td>
+                            <td><i class="fas fa-arrows-alt-h" style="color: gray;" title="Sin cambio"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p>
+                    Esta tabla incorpora iconografía mediante la biblioteca <strong>Font Awesome</strong> para representar visualmente la tendencia de precios. 
+                    Por ejemplo, una <i class="fas fa-arrow-up" style="color: green;"></i> indica un aumento, 
+                    mientras que una <i class="fas fa-arrow-down" style="color: red;"></i> señala una disminución. 
+                    Esto mejora la claridad visual y facilita la interpretación rápida de los datos.
+                </p>
+            </section>
+
+            <section class="section-separator">
+                <table class="tabla3" >
+                    <caption>TABLA #16 - BARRA DE PROGRESO EN CELDAS</caption>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Stock (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Manzana</td>
+                                <td>
+                                    <div class="progress-container">
+                                    <div class="progress-bar high" style="width: 80%;">80%</div>
+                                    </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Banana</td>
+                            <td>
+                                <div class="progress-container">
+                                <div class="progress-bar medium" style="width: 50%;">50%</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                        <td>Pera</td>
+                            <td>
+                                <div class="progress-container">
+                                <div class="progress-bar low" style="width: 20%;">20%</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                En esta tabla se utilizan div con estilos CSS personalizados para representar barras de progreso que reflejan porcentajes de stock. Cada barra tiene un ancho proporcional al valor mostrado, con colores diferenciados
+                (rojo, amarillo, verde) para facilitar una lectura rápida del estado de cada producto.
+                </p>
+        </body>
+    </html>
+            

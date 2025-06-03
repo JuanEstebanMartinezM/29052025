@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.tabla1 {
+    margin-bottom: 20px;
+}
+
+.tabla2, .tabla2 th, .tabla2 td {
+    border: 1px solid black;
+}
+
+.tabla3 {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.tabla3, .tabla3 th, .tabla3 td {
+    border: 1px solid black;
+}
+
+.table4 {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.table4, .table4 th, .table4 td {
+    border: 1px solid black;
+}
+
+.table4 th, .table4 td {
+    padding: 10px;
+}
+
+.table5 {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.table5, .table5 th, .table5 td {
+    border: 1px solid tomato;
+}
+
+.table6 {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.table6, .table6 th, .table6 td {
+    border: 1px solid #000;
+}
+
+.table6 thead {
+    background-color: #757c73;
+    color: white;
+}
+
+.table7 {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.table7, .table7 th, .table7 td {
+    text-align: center;
+    border: 1px solid #3bae1c;
+}
+
+.table8 {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.table8, .table8 th, .table8 td {
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.table8 tbody tr:nth-child(odd) {
+    background-color: #757c73;
+    color: white;
+}
+
+.table9 {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.table9, .table9 th, .table9 td {
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.table9 tbody tr:hover {
+    background-color: #757c73;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    text-align: right;
+    padding-right: 5px;
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+    border-radius: 5px 0 0 5px;
+}
+
+.low { 
+    background-color: #e74c3c; 
+}
+
+.medium { 
+    background-color: #f1c40f; 
+}
+
+.high { 
+    background-color: #2ecc71; 
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+p {
+    margin: 15px 0;
+    text-align: justify;
+}
+
+ul {
+    margin: 10px 0;
+    padding-left: 30px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+code {
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+}
+
+.responsive-container {
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.section-separator {
+    margin: 40px 0;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+}
